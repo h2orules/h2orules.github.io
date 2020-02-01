@@ -13,6 +13,7 @@ include: ["_pages"]
 permalink: /:year/:month/:day/:title:output_ext
 twitter_username: h2orules
 github_username: h2orules
+jumbotron: false
 
 
 # Authors
@@ -20,6 +21,7 @@ authors:
   h2orules:
     name: h2orules
     display_name: h2orules
+    avatar: assets/images/h2orules-avatar.jpg
     # gravatar: 
     email: h2orules@hotmail.com
     web: https://h2orules.github.io
