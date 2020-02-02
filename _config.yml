@@ -2,8 +2,8 @@
 name: "h2orules's GitHub.io"
 title: "h2orules's GitHub.io"
 description: "A new GitHub.io page for h2orules"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+logo: 'assets/images/h2orules-logo.png'
+favicon: 'assets/images/h2orules-logo-small.png'
 # baseurl: "/blog"
 url: "https://h2orules.github.io/"
 # google_analytics: ''
