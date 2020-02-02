@@ -1,0 +1,69 @@
+# Site
+name: "h2orules's GitHub.io"
+title: "h2orules's GitHub.io"
+description: "A new GitHub.io page for h2orules"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+# baseurl: "/blog"
+url: "https://h2orules.github.io/"
+# google_analytics: ''
+# disqus: ''
+# mailchimp-list: ''
+include: ["_pages"]
+permalink: /:year/:month/:day/:title:output_ext
+twitter_username: h2orules
+github_username: h2orules
+jumbotron: false
+
+
+# Authors
+authors:
+  h2orules:
+    name: h2orules
+    display_name: h2orules
+    avatar: assets/images/h2orules-avatar.jpg
+    # gravatar: 
+    email: h2orules@hotmail.com
+    web: https://h2orules.github.io
+    twitter: https://twitter.com/h2orules
+    description: "A software engineering manager who writes an occasional blog."
+  
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: ""
+adsense-data-ad-slot: ""
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
