@@ -8,15 +8,30 @@
             "type": "shell",
             "command": "echo Hello"
         },
-        {  "label": "Serve",
+        {  
+            "label": "Serve",
             "type": "shell",
             "command": "bundle exec jekyll serve --livereload",
-            "group": {
-              "kind": "test",
-              "isDefault": true
-            },
+            "group": "test",
             "isBackground": true,
-            "problemMatcher": ["$jekyll-error-watch", "$jekyll-warning-watch"]
+            "problemMatcher": ["$jekyll-error-watch", "$jekyll-warning-watch"],
+            "promptOnClose": false
+        },
+        {
+            "label": "Launch",
+            "type": "shell",
+            "command": "www-browser http://127.0.0.1:4000",
+            "group": "test"
+        },
+        {
+            "label": "Test",
+            "type": "shell",
+            "dependsOn": ["Serve", "Launch"],
+            "group": 
+            {
+                "kind": "test",
+                "isDefault": true
+            }
         },
         {
             "label": "Build",
