@@ -6,9 +6,10 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 #
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
+# This site is built with standalone Jekyll and deployed via GitHub Actions
+# (see .github/workflows/jekyll.yml), so we are not pinned to the versions
+# bundled by the github-pages gem.
+gem "jekyll", "~> 4.3"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
